@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/siteStyle.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  </head>
+  <body>
+    <section class="firstSec">
+      <nav>
+        <div style="display: flex;">
+          <div class="logo">M</div>
+          <div class="title">Mulih</div>
+        </div>
+        <ul>
+          <li id="activeMenuItem" class="activeMenuItem">Home</li>
+          <li onclick="selectBar('property')" class="Property">Property</li>
+          <li onclick="selectBar('about')" class="About">About</li>
+          <li onclick="selectBar('service')" class="Service">Service</li>
+          <li onclick="selectBar('contact')" class="Contact">Contact</li>
+        </ul>
+        <div class="signIn">Sign in</div>
+        <div class="login">Login</div>
+      </nav>
+
+      <!---------------------------------------------------- first section content -->
+      <div class="firstSecContainer">
+        <div class="realEstate">REAL ESTATE</div>
+        <div class="hunt">
+          Let's hunt for your <br />
+          dream residence
+        </div>
+        <div class="lorem">
+          Explore our range of beautiful properties with the addition of <br> 
+          separate accommodation suitable for you.
+        </div>
+        <div class="buy-rent">
+          <div id="buy" class="active" onclick="buy()">Buy</div>
+          <div id="rent" onclick="rent()">Rent</div>
+        </div>
+        <form class="buyForm">
+          <div>
+            <div>Location</div>
+            <select onchange="change(this)" id="">
+              <option value="Bogor, Jawa Barat">Bogor, Jawa Barat</option>
+              <option value="Bogor, Jawa Barat">Bogor, Jawa Barat</option>
+              <option value="Bogor, Jawa Barat">Bogor, Jawa Barat</option>
+              <option value="Bogor, Jawa Barat">Bogor, Jawa Barat</option>
+            </select>
+          </div>
+          <div>
+            <div>Type</div>
+            <select onchange="change(this)" id="">
+              <option value="Home">Home</option>
+              <option value="Apartment">Apartment</option>
+              <option value="Castle">Castle</option>
+              <option value="Duplex">Duplex</option>
+            </select>
+          </div>
+          <div>
+            <div>Price Range</div>
+            <select onchange="change(this)" id="">
+              <option value="200$ - 350$">200$ - 350$</option>
+              <option value="350$ - 500$">350$ - 500$</option>
+              <option value="500$ - 650$">500$ - 650$</option>
+              <option value="650$ - 800$">650$ - 800$</option>
+            </select>
+          </div>
+          <div >
+            <input class="search" type="submit" value="Search">
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- ------------------------------------discover -->
+
+    <section >
+      
+      <div class="firstSecContainer">
+        <div class="realEstate">DISCOVER</div>
+        <div class="recommendation">
+          Best recommendation
+        </div>
+        <div class="lorem">
+          Discover our exclusive selection of the finest one-of-a-kind <br> 
+          luxury properties architectural masterpieces.
+        </div>
+        <div class="apartments">
+          <div class="apartment">
+            <img src="img/Rectangle 227.png" alt="">
+            <div class="imgTitle">Perum griya asri</div>
+            <div class="imgOwner">Bogor Jawa Barat</div>
+            <div class="imgPrice">$25,000</div>
+            <div class="imgButton">Send Inquiry</div>
+          </div>
+          <div class="apartment">
+            <img src="img/Rectangle 221.png" alt="">
+            <div class="imgTitle">Perum kencana asri</div>
+            <div class="imgOwner">Bogor Jawa Barat</div>
+            <div class="imgPrice">$35,000</div>
+            <div class="imgButton">Send Inquiry</div>
+          </div>
+          <div class="apartment">
+            <img src="img/Rectangle 229.png" alt="">
+            <div class="imgTitle">Perum rakjel elit</div>
+            <div class="imgOwner">Bogor Jawa Barat</div>
+            <div class="imgPrice">$40,000</div>
+            <div class="imgButton">Send Inquiry</div>
+          </div>
+        </div>
+        
+    </section>
+    <!-- -------------------------------------------------------our advante -->
+
+    <section style="background-color: #F5F5F5; width: 100%; height: 850px;">
+
+      <div class="firstSecContainer">
+        <div class="ourAdvante">OUR ADVANTE</div>
+        <div class="hunt" style="margin-top: 80px;">
+          Giving you peace  <br />
+          of mind
+        </div>
+      </div>
+
+      <div class="advante">
+        <!-- ---------------------------------advante first row -->
+        <div class="advanteFirstRow">
+          <div class="rowItem">
+            <i class="fa-solid fa-heart icon"></i>
+            <div class="name">Comfortable</div>
+            <div class="description">Enjoy lifestyle amenities designed to <br> provide every homeowners modern <br> comfort, a stone's throw away from <br> schools, churches, and hospitals.</div>
+          </div>
+          <div class="rowItem">
+            <i class="fa-solid fa-shield icon"></i>
+            <div class="name">Extra security</div>
+            <div class="description">You can connect with potential tenants <br> without having to share your phone <br> number. We also require all users to register to <br> validate their legitimacy.
+            </div>
+          </div>
+          <div class="rowItem">
+            <i class="fa-solid fa-star icon"></i>
+            <div class="name">Luxury</div>
+            <div class="description">Find out how we provide the highest <br> standard of professional property <br> management to give you all the <br> benefits of property.
+            </div>
+          </div>
+        </div>
+        <!-- ----------------------------------------------advante second row -->
+        <div class="advanteFirstRow">
+          <div class="rowItem">
+            <i class="fa-solid fa-ticket icon"></i>
+            <div class="name">Best price</div>
+            <div class="description">Not sure what you should be charging <br> for your property? Let us do the numbers <br> for you—contact us today for a free <br> rental appraisal on your home.</div>
+          </div>
+          <div class="rowItem">
+            <i class="fa-solid fa-location-dot icon"></i>
+            <div class="name">Strategic location</div>
+            <div class="description">located in the city center close to the <br> shopping center. Very good for areas <br> surrounded by international education <br> centers, start-up office centers.</div>
+          </div>
+          <div class="rowItem">
+            <i class="fa-solid fa-chart-pie icon"></i>
+            <div class="name">Efficient</div>
+            <div class="description">Schedule visits to multiple properties at <br> once in one day without having to call <br> them one by one. Check everything <br> and find the best properties for rent.</div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ----------------------------------------------------------people say about us -->
+
+    <section >
+      
+      <div class="firstSecContainer">
+        <div class="customer">CUSTOMER TESTIMONIAL</div>
+        <div class="recommendation">
+          Peopel say about us?
+        </div>
+        
+        <div class="apartments">
+          <div class="apartment" style="width: 350px; height: 300px; padding: 30px;">
+            <i class="fa-solid fa-quote-left icon" style="color: #F5F5F5;"></i>
+            <div class="peopleTextOne">It proved to be exactly the kind <br> of home we wanted.</div>
+            <div class="peopleTextTwo">We wish to express our thanks for your <br> hard work in finding us a temporary <br> home, which proved to be exactly what <br> we wanted.</div>
+            <div class="peopleInfo">
+              <img src="img/Ellipse 3.png" alt="">
+              <div>
+                <div class="peopleName">Jaydon Aminoff</div>
+                <div class="peopleCareer">UX Designer</div>
+              </div>
+            </div>
+          </div>
+          <div class="apartment" style="width: 350px; height: 300px; padding: 30px;">
+            <i class="fa-solid fa-quote-left icon" style="color: #F5F5F5;"></i>
+            <div class="peopleTextOne">Nobody knows Portland and the <br> peninsula better than David.</div>
+            <div class="peopleTextTwo">My wife and I had a dream of downsizing <br> from our house in Cape Elizabeth into a <br> small condo closer to where we work <br> and play in Portland. </div>
+            <div class="peopleInfo">
+              <img src="img/Ellipse 4.png" alt="">
+              <div>
+                <div class="peopleName">Alfredo Donin</div>
+                <div class="peopleCareer">UI Designer</div>
+              </div>
+            </div>
+          </div>
+          <div class="apartment" style="width: 350px; height: 300px; padding: 30px;">
+            <i class="fa-solid fa-quote-left icon" style="color: #F5F5F5;"></i>
+            <div class="peopleTextOne">He keeps his client’s best <br> interests in sharp focus.</div>
+            <div class="peopleTextTwo">After working with David to sell my home <br> in 2013, I was convinced that he’s the <br> only realtor I’ll ever need. Since then, I’ve <br> bought two properties and sold one.</div>
+            <div class="peopleInfo">
+              <img src="img/Ellipse 5.png" alt="">
+              <div>
+                <div class="peopleName">Makenna Korsgaard</div>
+                <div class="peopleCareer">UX Researcher</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+    </section>
+
+    <!-- ----------------------------------------------------------------footer -->
+    <footer>
+      <div class="foot">
+      <!-- ---------------------------------------footer first column -->
+      <div class="firstCol">
+        <div style="display: flex;">
+          <div class="logo">M</div>
+          <div class="title">Mulih</div>
+        </div>
+        <div class="firstColText">We have built our reputation as true local <br> area experts.</div>
+        <div class="firstColTitle">Newsletter</div>
+        <form>
+          <input type="text" placeholder="Input your email" class="firstColTextInp">
+          <input type="submit" value="Send" class="firstColSendInp">
+        </form>
+      </div>
+      <!-- ---------------------------------------footer second column -->
+      <div>
+        <div class="colsHead">Service</div>
+        <div class="colsItem">About Us</div>
+        <div class="colsItem">Careers</div>
+        <div class="colsItem">Terms & Conditions</div>
+        <div class="colsItem">Privacy & Policy</div>
+      </div>
+      <!-- ---------------------------------------footer third column -->
+      <div>
+        <div class="colsHead">Community</div>
+        <div class="colsItem">Find agents</div>
+        <div class="colsItem">Lifestyle</div>
+        <div class="colsItem">Legal notic</div>
+      </div>
+      <!-- ---------------------------------------footer fourth column -->
+      <div>
+        <div class="colsHead">Follow us on</div>
+        <div style="display: flex; justify-content: space-between;">
+          <i class="fa-brands fa-instagram" class="footIcons"></i>
+          <i class="fa-brands fa-youtube" class="footIcons"></i>
+          <i class="fa-brands fa-facebook-f" class="footIcons"></i>
+        </div>
+      </div>
+    </div>
+    </footer>
+
+    <script>
+      function rent(){
+        document.querySelector(".active").removeAttribute("class");
+        document.querySelector("#rent").setAttribute("class","active");
+      }
+      function buy(){
+        document.querySelector("#rent").removeAttribute("class");
+        document.querySelector("#buy").setAttribute("class","active");
+      }
+      function change(select){
+        select.document.querySelector("select").style="black";
+      }
+    </script>
+  </body>
+</html>
